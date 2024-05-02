@@ -145,8 +145,16 @@ export default function Form({ customers }: { customers: CustomerField[]; }) {
         </Link>
         <Button
           type="submit"
-          aria-describedby='message-error'
+          aria-describedby='create-error'
         >Create Invoice</Button>
+        {/* <div id='create-error' aria-live='polite' aria-atomic='true'>
+          {state.message?. &&
+            state.message.map((error: string) => (
+              <p className='mt-2 text-sm text-red-500' key={error}>
+                {error}
+              </p>
+            ))}
+        </div> */}
       </div>
     </form>
   );
